@@ -1,4 +1,4 @@
-use crate::items::termination::Termination;
+use crate::items::{maybe_uninit::MaybeUninit, termination::Termination};
 
 impl Termination for () {
     fn into_code(self) -> isize {
@@ -13,5 +13,5 @@ impl Termination for isize {
 }
 
 struct ArrayIter<const N: usize, T> {
-    data: [T; N],
+    data: [MaybeUninit<T>; N],
 }

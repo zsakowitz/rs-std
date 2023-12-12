@@ -13,3 +13,4 @@ pub mod manually_drop;
 pub mod maybe_uninit;
 pub mod drop;
 pub mod destruct;
+pub mod transmute;

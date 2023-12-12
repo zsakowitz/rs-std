@@ -1,2 +1,2 @@
 #[lang = "sync"]
-pub unsafe auto trait Sync {}
+pub auto trait Sync {}
